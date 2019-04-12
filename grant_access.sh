@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for ip in `awk -F: '{print $1}'`
+for ip in `awk -F: '{print $1}' server_list.txt`
 do
   #adding user to group of servers
   useradd -s /bin/bash $1
